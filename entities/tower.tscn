@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg06r67jqus3q"]
+
+[ext_resource type="Texture2D" uid="uid://cfg721efn3quh" path="res://assets/dev/tower0.png" id="1_k1sas"]
+[ext_resource type="Script" uid="uid://d1wvg5uqqgs13" path="res://entities/tower.gd" id="1_vedim"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dnc73"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k1sas")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vedim"]
+radius = 33.0
+
+[node name="Tower" type="Area2D"]
+script = ExtResource("1_vedim")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dnc73")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vedim")
+
+[node name="IFrameTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="IFrameTimer" to="." method="_on_i_frame_timer_timeout"]

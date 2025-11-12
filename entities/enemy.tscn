@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://dky3616d6y1hj"]
+
+[ext_resource type="Texture2D" uid="uid://djq35wo801wrt" path="res://assets/dev/enemy1.png" id="1_4gyqm"]
+[ext_resource type="Script" uid="uid://bvvyot3d3ycya" path="res://entities/enemy.gd" id="1_b4nis"]
+[ext_resource type="Texture2D" uid="uid://dca0hcbtcoj3p" path="res://assets/dev/enemy0.png" id="2_qi2p4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pqhw6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qi2p4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_4gyqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qi2p4")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4gyqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qi2p4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_4gyqm")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b4nis"]
+size = Vector2(64, 64)
+
+[node name="Enemy" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_b4nis")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pqhw6")
+animation = &"run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_b4nis")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
