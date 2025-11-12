@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dky3616d6y1hj"]
 
-[ext_resource type="Texture2D" uid="uid://djq35wo801wrt" path="res://assets/dev/enemy1.png" id="1_4gyqm"]
-[ext_resource type="Script" uid="uid://bvvyot3d3ycya" path="res://entities/enemy.gd" id="1_b4nis"]
-[ext_resource type="Texture2D" uid="uid://dca0hcbtcoj3p" path="res://assets/dev/enemy0.png" id="2_qi2p4"]
+[ext_resource type="Texture2D" uid="uid://djq35wo801wrt" path="res://assets/dev/mob1.png" id="1_4gyqm"]
+[ext_resource type="Script" uid="uid://bvvyot3d3ycya" path="res://entities/abstract/mob.gd" id="1_b4nis"]
+[ext_resource type="Texture2D" uid="uid://dca0hcbtcoj3p" path="res://assets/dev/mob0.png" id="2_qi2p4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pqhw6"]
 animations = [{
@@ -51,3 +51,5 @@ animation = &"run"
 shape = SubResource("RectangleShape2D_b4nis")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
