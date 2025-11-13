@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://8mkcauly8f8v"]
 
-[ext_resource type="Script" uid="uid://btapfoqc1o8wy" path="res://levels/level_1.gd" id="1_iltrn"]
-[ext_resource type="PackedScene" uid="uid://dky3616d6y1hj" path="res://entities/abstract/mob.tscn" id="2_8lq2r"]
-[ext_resource type="PackedScene" uid="uid://diowa33ndeo11" path="res://levels/hud.tscn" id="3_bt44k"]
+[ext_resource type="Script" uid="uid://btapfoqc1o8wy" path="res://level.gd" id="1_cwqvt"]
+[ext_resource type="PackedScene" uid="uid://dky3616d6y1hj" path="res://entities/abstract/mob.tscn" id="2_5mrsh"]
+[ext_resource type="PackedScene" uid="uid://diowa33ndeo11" path="res://hud.tscn" id="3_safpt"]
 
 [sub_resource type="Curve2D" id="Curve2D_8lq2r"]
 _data = {
@@ -10,9 +10,11 @@ _data = {
 }
 point_count = 5
 
-[node name="Level1" type="Node"]
-script = ExtResource("1_iltrn")
-mob_scene = ExtResource("2_8lq2r")
+[node name="Level" type="Node"]
+script = ExtResource("1_cwqvt")
+mob_type = ExtResource("2_5mrsh")
+spawn_pattern = Array[float]([1.0, 2.0, 1.0, 5.0])
+total_mobs = 3
 
 [node name="SpawnTimer" type="Timer" parent="."]
 wait_time = 0.5
@@ -29,7 +31,7 @@ curve = SubResource("Curve2D_8lq2r")
 
 [node name="MobFollowPath" type="PathFollow2D" parent="MobPath"]
 
-[node name="HUD" parent="." instance=ExtResource("3_bt44k")]
+[node name="HUD" parent="." instance=ExtResource("3_safpt")]
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
