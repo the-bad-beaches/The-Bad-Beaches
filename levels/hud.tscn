@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://diowa33ndeo11"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.4826389
+anchor_right = 0.5173611
+anchor_bottom = 0.03549383
+grow_horizontal = 2
+text = "Hello there!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0

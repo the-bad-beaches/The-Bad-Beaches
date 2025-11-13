@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://8mkcauly8f8v"]
+[gd_scene load_steps=5 format=3 uid="uid://8mkcauly8f8v"]
 
 [ext_resource type="Script" uid="uid://btapfoqc1o8wy" path="res://levels/level_1.gd" id="1_iltrn"]
 [ext_resource type="PackedScene" uid="uid://dky3616d6y1hj" path="res://entities/abstract/mob.tscn" id="2_8lq2r"]
+[ext_resource type="PackedScene" uid="uid://diowa33ndeo11" path="res://levels/hud.tscn" id="3_bt44k"]
 
 [sub_resource type="Curve2D" id="Curve2D_8lq2r"]
 _data = {
@@ -26,7 +27,9 @@ position = Vector2(240, 450)
 [node name="MobPath" type="Path2D" parent="."]
 curve = SubResource("Curve2D_8lq2r")
 
-[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+[node name="MobFollowPath" type="PathFollow2D" parent="MobPath"]
+
+[node name="HUD" parent="." instance=ExtResource("3_bt44k")]
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
