@@ -291,3 +291,36 @@ But now, far beneath the surface of Luma town, in the depths of the trenches, a 
 - **Guardian**: So our journey is close to the end. Thank you, Light Priests. With your help, we will restore peace to our homes.
 
 ---
+
+## Act 3: The Abyssal Trench
+### Level 14: (Introduce Abyssal Trench mechanics) The Descent
+#### Before:
+- **Light Priest**: We descend... The light's blessing holds. Do you feel how the darkness claws at the light? This is an unholy place.
+- **Ranger**: Guardian... look at the walls. They're... moving. It's like the trench itself is alive.
+- **Luma Tender**: It is alive... It seems to be reacting to the light. We must be careful, or it might crush us.
+- **Shell Knight**: Something feels off... Like this place should not exist.
+- **Light Priest**: It shouldn't for much longer. The frenzied guardians are here. They are born of this darkness. We must purify them all.
+- **Guardian**: This is the heart of the illness. Let's get this over with.
+#### After:
+- **Ranger**: We're through. That was a tough fight. They're stronger down here.
+- **Light Priest**: They are in their native element. But the light still holds.
+- **Shell Knight**: Look ahead, Guardian. The trench seems to widen up ahead.
+- **Luma Tender**: I can feel it, an immense presence. The... the 'Song' is deafening, the Abyssal Bloom must be close.
+- **Light Priest**: We are here. This is the heart of the Trench. Prepare yourselves...
+
+### Level 15: (Final Boss) The Abyssal Bloom
+#### Before:
+- **Ranger**: That's... it? It looks beautiful. It's not... its not doing anything.
+- **Light Priest**: Do not be deceived by its appearance. The Abyssal Bloom is a creature of pure darkness. Its song corrupts everything around it.
+- *Some of the singing from the flower*
+- **Shell Knight**: We need to destroy it before it consumes our light.
+- **Guardian**: Everyone, get ready. This will be our final but toughest fight yet. For Luma Town, for the Holy Land, for all our homes!
+#### After:
+- **Ranger**: We... we did it! The 'Song' has stopped!
+- **Dart Shaman**: The frenzied ones... they are calming down. The darkness is receding.
+- **Light Priest**: The Abyssal Bloom is no more. The light has triumphed.
+- **Guardian**: We... we have the heart of the Abyssal Bloom. Luma Town is finally safe again.
+- **Light Priest**: Your light has saved us all, Guardian. The darkness will not return as long as the light endures. Let us return to your town and celebrate this victory.
+- **Guardian**: Yes, let us go home. Together, we have restored peace to our world.
+
+---
