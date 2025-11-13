@@ -10,13 +10,10 @@ point_count = 10
 
 [node name="Level2" type="Node2D"]
 
-[node name="Logic" parent="." node_paths=PackedStringArray("mob_path") instance=ExtResource("1_47nnh")]
-total_mobs = 10
-spawn_pattern = Array[float]([1.0])
-mob_path = NodePath("../Lv2MobPath/Lv2MobFollow")
+[node name="Logic" parent="." instance=ExtResource("1_47nnh")]
 
-[node name="Lv2MobPath" type="Path2D" parent="."]
+[node name="MobPath1" type="Path2D" parent="."]
 curve = SubResource("Curve2D_47nnh")
 
-[node name="Lv2MobFollow" type="PathFollow2D" parent="Lv2MobPath"]
+[node name="MobFollow1" type="PathFollow2D" parent="MobPath1"]
 position = Vector2(0, 64)

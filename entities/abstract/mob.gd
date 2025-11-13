@@ -23,6 +23,7 @@ func _process(delta) -> void:
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	queue_free()
 
+
 func progress_path() -> void:
 	mob_path.progress_ratio = percent_goal
 	position = mob_path.position
