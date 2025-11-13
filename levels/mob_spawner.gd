@@ -15,7 +15,7 @@ signal mob_spawned(mob_instance)
 
 var spawn_pattern_idx = 0
 var mobs_spawned = 0
-var DEFAULT_SPAWN_TIMER_WT
+@onready var DEFAULT_SPAWN_TIMER_WT = $SpawnTimer.wait_time
 
 
 func _on_spawn_timer_timeout() -> void:
@@ -27,7 +27,11 @@ func _on_spawn_timer_timeout() -> void:
 	mob.position = mob_path.position
 	# Set delay for next spawn
 	if spawn_pattern:
-		$SpawnTimer.wait_time = spawn_pattern[spawn_pattern_idx]
+		print("Assigning dynamic wait time to timer: ", $SpawnTimer)
+		if spawn_pattern[spawn_pattern_idx] <= 0:
+			$SpawnTimer.wait_time = DEFAULT_SPAWN_TIMER_WT
+		else:
+			$SpawnTimer.wait_time = spawn_pattern[spawn_pattern_idx]
 		spawn_pattern_idx += 1
 		if (spawn_pattern_idx >= spawn_pattern.size()):
 			spawn_pattern_idx = 0

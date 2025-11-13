@@ -27,12 +27,6 @@ curve = SubResource("Curve2D_org2t")
 [node name="MobFollow1" type="PathFollow2D" parent="MobPath1"]
 position = Vector2(0, 320)
 
-[node name="Spawner1" parent="." node_paths=PackedStringArray("mob_path") instance=ExtResource("2_h7f5b")]
-mob_type = ExtResource("3_vhj45")
-mob_path = NodePath("../MobPath1/MobFollow1")
-total_mobs = 7
-spawn_pattern = Array[float]([1.0, 4.0, 2.0, 3.0])
-
 [node name="MobPath2" type="Path2D" parent="."]
 curve = SubResource("Curve2D_h7f5b")
 
@@ -40,7 +34,13 @@ curve = SubResource("Curve2D_h7f5b")
 position = Vector2(1152, 320)
 rotation = 3.1415927
 
+[node name="Spawner1" parent="." node_paths=PackedStringArray("mob_path") instance=ExtResource("2_h7f5b")]
+mob_type = ExtResource("3_vhj45")
+mob_path = NodePath("../MobPath1/MobFollow1")
+total_mobs = 7
+spawn_pattern = Array[float]([4.0, 6.0, 4.0, 0.0])
+
 [node name="Spawner2" parent="." node_paths=PackedStringArray("mob_path") instance=ExtResource("2_h7f5b")]
 mob_type = ExtResource("3_vhj45")
 mob_path = NodePath("../MobPath2/MobFollow2")
-total_mobs = 3
+total_mobs = 7
