@@ -10,9 +10,6 @@ script = ExtResource("1_cwqvt")
 wait_time = 2.0
 one_shot = true
 
-[node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(240, 450)
-
 [node name="HUD" parent="." instance=ExtResource("3_safpt")]
 
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
