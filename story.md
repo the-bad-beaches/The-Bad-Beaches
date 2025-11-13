@@ -324,3 +324,35 @@ But now, far beneath the surface of Luma town, in the depths of the trenches, a 
 - **Guardian**: Yes, let us go home. Together, we have restored peace to our world.
 
 ---
+
+## Epilogue: Back to Luma Town
+- **Elder**: Guardian! You have returned! You did it... the floods have stopped and the creatures have ceased their attacks.
+- **Guardian**: Yes, Elder. We found the source of the disturbances and destroyed it.
+- **Elder**: You have done a great service to our town and all the lands. *Notices the heart of the Abyssal Bloom* What is that you carry?
+- **Guardian**: It is the heart of the Abyssal Bloom which was causing all the chaos. With it gone, peace has been restored.
+- **Light Priest**: Elder, Guardian, if I may speak. The light from your tower has become the only beacon for our lands. We wish to strengthen its power by purifying the heart of the Abyssal Bloom here.
+- **Guardian**: Strengthen the light?
+- **Light Priest**: Yes, it is the only way to ensure that the darkness never returns. The light must be a constant presence, a shield against the abyss.
+- **Elder**: Very well. You can proceed with the purification.
+- *Purification ritual takes place*
+- *Celebrations take place*
+
+- *Some days later, in a private room, Guardian is reporting to the Elder*
+- **Guardian**: ...and that is how we defeated the Abyssal Bloom.
+- **Elder**: Incredible. You have finally ended the great ancient war for good.
+- **Guardian**: Ancient war? Elder, I thought we were only dealing with a recent disturbance.
+- **Elder**: There is much you do not know about. Long ago, during the dark ages, both the Abyssal Bloom and the Light was created as biological weapons.
+- **Guardian**: Both? The light as well??
+- **Elder**: Yes. The enemy created the Abyssal Bloom to empower their forces, it utilized the power of the darkness to control others. In response, our ancestors created the Light, a parasitic power that instead of empowring the darkness, consumed it.
+- **Guardian**: So the light and darkness are both weapons?
+- **Elder**: In a way, yes. But over time, our side started winning most of the battles, and the dark forces finally admitted defeat. They agreed to be purified by the light, and the ones who couldn't be purified such as the Abyssal Bloom were sealed deep within the abyssal trench where they could exist in peace, away from the light.
+- **Guardian**: I see... so the light was never meant to be a permanent solution. But then, why did the Abyssal Bloom resurface now?
+- **Elder**: Once we secured our victory, we should've controlled the light better. But instead, we let it grow wild, and in doing so, we let it grow too strong and even the Abyssal Trench could not avoid it anymore. The Abyssal Bloom sensed the light's power and tried to fight back once more.
+- **Guardian**: Then... this whole quest. It wasn't a rescue. We were not solving a recent problem. We were just repeating an ancient war. Maybe this was all a mistake, couldn't we have controlled our light and restored the peace in the Trench as well?
+- **Elder**: No, Guardian. When there is a war, the winning side becomes the 'correct' side. It is a fact that the light has brought peace to our lands for generations now. It is also a fact that the Abyssal Bloom threatened that peace. Whatever its reasons might have been, it was a threat that needed to be eliminated.
+- **Guardian**: But then... why do I feel so conflicted about this? Like we just repeated a mistake.
+- **Elder**: Some of our ancestors believed that in an ideal world, light and darkness would coexist as equals in harmony. But in reality, that is impossible. When two forces are equals, they feel threatened by each other, and it will only end in conflict. The only way to ensure peace is for one side to be stronger, and for it to eliminate the other.
+- **Guardian**: I see... so peace is only possible through violence.
+- **Elder**: It is a harsh truth, but one we must accept. We are the 'light' side, and our peace has been restored. Let us rejoice in that and hope that our peace lasts for many generations to come.
+
+---
