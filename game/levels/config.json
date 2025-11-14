@@ -1,0 +1,6 @@
+{
+	"act_1": {
+		"path": "res://game/levels/act_1",
+		"config": "config.json"
+	}
+}

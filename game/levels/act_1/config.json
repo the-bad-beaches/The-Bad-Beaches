@@ -1,0 +1,6 @@
+{
+	"name": "Act 1",
+	"levels": {
+		"level_1": { "file": "level_01.json" },
+	}
+}
