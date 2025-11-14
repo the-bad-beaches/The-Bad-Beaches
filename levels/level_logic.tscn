@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://8mkcauly8f8v"]
+
+[ext_resource type="Script" uid="uid://btapfoqc1o8wy" path="res://levels/level_logic.gd" id="1_cwqvt"]
+[ext_resource type="PackedScene" uid="uid://diowa33ndeo11" path="res://hud.tscn" id="3_safpt"]
+
+[node name="LevelLogic" type="Node"]
+script = ExtResource("1_cwqvt")
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="HUD" parent="." instance=ExtResource("3_safpt")]
+
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

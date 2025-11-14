@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://slosotc2i1cl"]
+
+[ext_resource type="PackedScene" uid="uid://8mkcauly8f8v" path="res://levels/level_logic.tscn" id="1_47nnh"]
+
+[sub_resource type="Curve2D" id="Curve2D_47nnh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 1088, 64, 0, 0, 0, 0, 1088, 192, 0, 0, 0, 0, 64, 192, 0, 0, 0, 0, 64, 320, 0, 0, 0, 0, 1088, 320, 0, 0, 0, 0, 1088, 448, 0, 0, 0, 0, 64, 448, 0, 0, 0, 0, 64, 576, 0, 0, 0, 0, 1216, 576)
+}
+point_count = 10
+
+[node name="Level2" type="Node2D"]
+
+[node name="Logic" parent="." instance=ExtResource("1_47nnh")]
+
+[node name="MobPath1" type="Path2D" parent="."]
+curve = SubResource("Curve2D_47nnh")
+
+[node name="MobFollow1" type="PathFollow2D" parent="MobPath1"]
+position = Vector2(0, 64)
