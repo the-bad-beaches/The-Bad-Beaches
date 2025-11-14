@@ -15,6 +15,11 @@ run/main_scene="uid://bbfy1so31fmv"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Levels="*res://game/scripts/levels/config.gd"
+Loader="*res://game/scripts/levels/loader.gd"
+
 [input]
 
 Pause={
