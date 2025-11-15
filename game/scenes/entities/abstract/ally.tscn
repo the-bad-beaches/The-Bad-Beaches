@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://dg06r67jqus3q"]
 
-[ext_resource type="Texture2D" uid="uid://cfg721efn3quh" path="res://game/assets/dev/tower0.png" id="1_k1sas"]
-[ext_resource type="Script" uid="uid://d1wvg5uqqgs13" path="res://game/scripts/entities/tower.gd" id="1_vedim"]
+[ext_resource type="Script" uid="uid://d1wvg5uqqgs13" path="res://game/scripts/entities/ally.gd" id="1_vxb5l"]
+[ext_resource type="Texture2D" uid="uid://cfg721efn3quh" path="res://game/assets/dev/tower0.png" id="2_48l7v"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dnc73"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_k1sas")
+"texture": ExtResource("2_48l7v")
 }],
 "loop": true,
 "name": &"idle",
@@ -18,7 +18,7 @@ animations = [{
 radius = 33.0
 
 [node name="Tower" type="Area2D"]
-script = ExtResource("1_vedim")
+script = ExtResource("1_vxb5l")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
