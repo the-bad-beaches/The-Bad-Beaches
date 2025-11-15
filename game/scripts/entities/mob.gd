@@ -1,7 +1,7 @@
 extends RigidBody2D
 class_name Mob
 
-@export var mob_path: PathFollow2D
+var mob_path: PathFollow2D
 
 var percent_goal = 0.0
 var rate = 0.1
@@ -14,6 +14,10 @@ func _ready() -> void:
 	$AnimatedSprite2D.play()
 	if percent_goal == null:
 		percent_goal = 0.0
+
+func with_params(mob_path_):
+	self.mob_path = mob_path_
+	return self
 
 func _process(delta) -> void:
 	percent_goal = clamp(percent_goal + delta * rate, 0.0, 1.0)

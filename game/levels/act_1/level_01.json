@@ -2,7 +2,7 @@
 	"name": "3 am, 3 deadlines, and a dream",
 	"paths": [
 		{
-			"id": "pathA",
+			"id": "path_a",
 			"path": [
 				[0, 0],
 				[200, 0],
@@ -10,18 +10,46 @@
 			],
 		},
 		{
-			"id": "pathA",
+			"id": "path_b",
 			"path": [
 				[200, 200],
 				[200, 0],
 				[0, 0]
 			]
 		},
-	],
-	"mobs": [
 		{
-			"type": "generic",
-			"path": "pathA"
+			"id": "path_c",
+			"path": [
+				[200, 0],
+				[0, 0],
+				[200, 200]
+			]
 		}
-	]
+	],
+	
+	"waves": [
+		{
+			"mobs": [
+				{ "total": 15, "type": "generic", "path": "path_a", "interval": 0.5 },
+				{ "total": 5, "type": "generic", "path": "path_b", "interval": 2.5 },
+			],
+			"delay": 0
+		},
+		{
+			"mobs": [
+				{ "total": 15, "type": "generic", "path": "path_b", "interval": 0.5 },
+				{ "total": 5, "type": "generic", "path": "path_c", "interval": 2.5 },
+			],
+			"delay": 7.5
+		},
+		{
+			"mobs": [
+				{ "total": 5, "type": "generic", "path": "path_a", "interval": 0.5 },
+				{ "total": 15, "type": "generic", "path": "path_b", "interval": 1.0 },
+				{ "total": 5, "type": "generic", "path": "path_c", "interval": 2.5 },
+			],
+			"delay": 10
+		}
+	],
+	"start_delay": 2
 }
