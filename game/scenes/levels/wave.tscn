@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cv450su2isfdn"]
+
+[ext_resource type="Script" uid="uid://cttyxjtwdlq0g" path="res://game/scripts/levels/wave.gd" id="1_ifmtt"]
+
+[node name="Wave" type="Node2D"]
+script = ExtResource("1_ifmtt")
+
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk5ib5e8nnwtj"]
+
+[ext_resource type="Script" uid="uid://cmjotctrlxx40" path="res://game/scripts/levels/level.gd" id="1_r5xwy"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_r5xwy")
+
+[node name="StartTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
