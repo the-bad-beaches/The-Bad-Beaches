@@ -12,7 +12,7 @@ var GAME_STRUCTURE: Dictionary[String, Array] = {
 }
 
 ## The Wave scene used to control independent waves.
-@onready var WaveScene = preload("res://game/scenes/levels/wave.tscn")
+var WaveScene = preload("res://game/scenes/levels/wave.tscn")
 
 ## Spawners for mobs
 var mob_waves: Array[Node2D]
