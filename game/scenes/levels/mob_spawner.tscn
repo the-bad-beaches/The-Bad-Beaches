@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://cv450su2isfdn"]
 
-[ext_resource type="Script" uid="uid://cttyxjtwdlq0g" path="res://levels/mob_spawner.gd" id="1_eu0i8"]
+[ext_resource type="Script" uid="uid://cttyxjtwdlq0g" path="res://game/scripts/levels/mob_spawner.gd" id="1_ifmtt"]
 
 [node name="MobParams" type="Node2D"]
-script = ExtResource("1_eu0i8")
+script = ExtResource("1_ifmtt")
 
 [node name="SpawnTimer" type="Timer" parent="."]
 

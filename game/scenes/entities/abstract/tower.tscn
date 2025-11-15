@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dg06r67jqus3q"]
 
-[ext_resource type="Texture2D" uid="uid://cfg721efn3quh" path="res://assets/dev/tower0.png" id="1_k1sas"]
-[ext_resource type="Script" uid="uid://d1wvg5uqqgs13" path="res://entities/abstract/tower.gd" id="1_vedim"]
+[ext_resource type="Texture2D" uid="uid://cfg721efn3quh" path="res://game/assets/dev/tower0.png" id="1_k1sas"]
+[ext_resource type="Script" uid="uid://d1wvg5uqqgs13" path="res://game/scripts/entities/tower.gd" id="1_vedim"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dnc73"]
 animations = [{

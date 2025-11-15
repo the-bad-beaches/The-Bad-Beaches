@@ -41,4 +41,7 @@ func _on_spawn_timer_timeout() -> void:
 	mob_spawned.emit(mob)
 #	# Handle last mob
 	if mobs_spawned >= total_mobs:
-		$SpawnTimer.stop()
+		stop()
+
+func stop():
+	$SpawnTimer.stop()

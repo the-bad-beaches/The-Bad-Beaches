@@ -1,8 +1,27 @@
 {
 	"name": "3 am, 3 deadlines, and a dream",
-	"path": [
-		[0, 0],
-		[200, 0],
-		[200, 200]
+	"paths": [
+		{
+			"id": "pathA",
+			"path": [
+				[0, 0],
+				[200, 0],
+				[200, 200]
+			],
+		},
+		{
+			"id": "pathA",
+			"path": [
+				[200, 200],
+				[200, 0],
+				[0, 0]
+			]
+		},
+	],
+	"mobs": [
+		{
+			"type": "generic",
+			"path": "pathA"
+		}
 	]
 }
