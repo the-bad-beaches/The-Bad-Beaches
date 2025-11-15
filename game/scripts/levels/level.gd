@@ -88,5 +88,5 @@ func stop_spawners():
 
 func _on_start_timer_timeout() -> void:
 	for wave in mob_waves:
-		print("Starting wave [%s:%d] " % [wave.mob_type, wave.get_node("SpawnTimer").wait_time])
+		print("Starting wave [%s:%d] " % [wave.wave_id, wave.get_node("SpawnTimer").wait_time])
 		wave.start()
